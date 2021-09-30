@@ -10,14 +10,14 @@ import './App.css';
 function App() {
   return (
     <GlobalProvider>
-      <div className="wrapper">
+      <div className="card">
         <Header />
-        <div className="container">
-          <Balance />
-          <IncomeExpenses />
-          <TransactionList />
-          <AddTransaction />
-        </div>
+      </div>
+      <div className="card wrapper container">
+        <Balance />
+        <IncomeExpenses />
+        <TransactionList />
+        <AddTransaction />
       </div>
     </GlobalProvider>
   );

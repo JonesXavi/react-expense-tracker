@@ -22,14 +22,17 @@ body
 .text-center {
   text-align: center;
 }
-.wrapper
-{
+.card{
   width: 100%;
-  padding: 40px 30px 50px 30px;
+  padding: 15px;
   background: #ecf0f3;
   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
   border-radius: 40px;
-  height: 90vh;
+}
+.wrapper
+{
+  padding: 30px;
+  height: calc(100vh - 120px);
   overflow: auto;
 }
 .wrapper .logo
@@ -108,8 +111,11 @@ form .field.shake
   }
 }
 
+.disabled {
+  opacity: 0.5;
+}
 .container {
-  margin: 30px auto;
+  margin: 15px auto;
   width: 350px;
 }
 
@@ -245,12 +251,16 @@ input[type='number'] {
   opacity: 1;
 } */
 
+.error-border {
+  border: 1px solid red;
+}
+
 @media (max-width: 500px) {
   .wrapper {
     padding: 25px;
   }
   .container {
-    width: 100%;
+    width: 95%;
   }
 
   .delete-btn {
